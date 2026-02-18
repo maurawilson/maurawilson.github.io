@@ -13,6 +13,7 @@ library("cartogram")
 #install.packages("giscoR")
 library("giscoR")
 library("plotly")
+library("htmlwidgets")
 
 #load in data for participants
 map_data <- read.csv(
@@ -135,7 +136,13 @@ statesCount <- ggplot(
     color = 'azure3'
   ) +
   scale_fill_continuous(palette = "oranges") +
-  labs(title = "Symposium Participants by State", x = "Longitude", y = "Latitude")
+  labs(
+    title = "Symposium Participants by State", 
+    x = "Longitude", 
+    y = "Latitude"
+  ) +
+  coord_fixed(ratio=1.35)
+  
 
 ggplotly(statesCount, tooltip = c("region", "count"))
 
