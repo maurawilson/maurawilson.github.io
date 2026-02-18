@@ -2,5 +2,7 @@ The Center for Advances in Libraries, Museums, and Archives at The University of
 
 <a href = "BIF_cities_count.html">Participant Count by City, including Latitude and Longitude</a>
 <br>
-<a href = "BIF_by_city_nolatlong">Participant Count by City, not including Latitude and Longitude</a>
+<a href = "BIF_by_city_nolatlong.html">Participant Count by City, not including Latitude and Longitude</a>
+<br>
+<a href = "statesCount.html">Participant Count by State, US Participants Only</a>
 
